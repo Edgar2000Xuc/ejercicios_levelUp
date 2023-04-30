@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   let opcion;
+let suma = 0;
+let cant = 0;
+
+do {
+  let estatura = prompt("Ingrese la estatura en metros");
+  if (estatura && estatura !== "") {
+    suma += parseInt(estatura);
+    cant++;
+  } else {
+    alert("Ingrese una estatura válida");
+  }
+  opcion = prompt("¿Quieres ingresar otra estatura? s = si, n = no");
+} while (opcion === "s");
+
+if (cant > 0) {
+  let promedio = suma / cant;
+  document.write("<h2>Promedio de estaturas: " + promedio+ " metros</h2>");
+} else {
+  document.write("<h2>No se ingresaron estaturas</h2>");
+}
+
+  </script>
+
+
+</body>
+</html>
+
