@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sprint 2 semana 4</title>
+</head>
+<body>
+	<h1 style="color: rgb(0, 180, 135);">libros</h1>
+
+	<script>
+
+        alert("Hola bienvenido al ejercicio de Edgar Xuc");
+		// Constructor para un libro en una tienda
+		function Libro(titulo, autor, precio) {
+			this.titulo = titulo;
+			this.autor = autor;
+			this.precio = precio;
+		}
+
+		// Crear 2 objetos del tipo libro
+		var libro1 = new Libro("El Gran Gatsby", "F. Scott Fitzgerald", 12.99);
+		var libro2 = new Libro("Cien años de soledad", "Gabriel García Márquez", 14.99);
+
+		// Mostrar los datos de los libros en HTML
+		document.write("<p>" + libro1.titulo + " - " + libro1.autor + " - $" + libro1.precio + "</p>");
+		document.write("<p>" + libro2.titulo + " - " + libro2.autor + " - $" + libro2.precio + "</p>");
+	</script>
+<h1 style="color: blue;">Animales</h1>
+
+
+	<script>
+		// Constructor para un animal en un zoológico
+		function Animal(nombre, especie, edad) {
+			this.nombre = nombre;
+			this.especie = especie;
+			this.edad = edad;
+		}
+
+		// Crear 2 objetos del tipo animal
+		var animal1 = new Animal("León", "Panthera leo", 5);
+		var animal2 = new Animal("Elefante", "Loxodonta africana", 10);
+
+		// Mostrar los datos de los animales en HTML
+		document.write("<p>" + animal1.nombre + " - " + animal1.especie + " - " + animal1.edad + " años</p>");
+		document.write("<p>" + animal2.nombre + " - " + animal2.especie + " - " + animal2.edad + " años</p>");
+	</script>
+</body>
+</html>
